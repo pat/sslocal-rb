@@ -1,0 +1,13 @@
+inherit_from:
+  - https://gist.githubusercontent.com/pat/ba3b8ffb1901bfe5439b460943b6b019/raw/.rubocop.yml
+  - https://gist.githubusercontent.com/pat/ba3b8ffb1901bfe5439b460943b6b019/raw/performance.yml
+
+require:
+  - rubocop-packaging
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.7
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
