@@ -5,6 +5,7 @@ require "sslocal/state"
 module SSLocal
   class Railtie < Rails::Railtie
     initializer "sslocal.set_up_webpacker", :before => "webpacker.proxy" do
+      next unless defined?(Webpacker)
       state = SSLocal::State.new(Rails.env.to_s)
       Webpacker.config.dev_server[:https] = true if state.enabled?
     end
