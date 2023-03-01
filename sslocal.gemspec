@@ -10,13 +10,12 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/pat/sslocal-rb"
   spec.license  = "MIT"
 
-  spec.metadata["homepage_uri"]    = spec.homepage
-  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["homepage_uri"]          = spec.homepage
+  spec.metadata["rubygems_mfa_required"] = "true"
+  spec.metadata["source_code_uri"]       = spec.homepage
 
   spec.require_paths = ["lib"]
   spec.files = Dir["lib/**/*"] + %w[README.md LICENSE.txt CODE_OF_CONDUCT.md]
-  spec.test_files = Dir["{bin,spec}/**/*"] +
-                    %w[.rspec .rubocop.yml Gemfile Rakefile]
 
   # spec.bindir        = "exe"
   # spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }

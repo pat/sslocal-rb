@@ -5,5 +5,5 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 12.0"
-gem "rspec-github", require: false
-gem "rubocop-github-annotations-formatter", require: false
+gem "rspec-github", :require => false
+gem "rubocop-github-annotations-formatter", :require => false
